@@ -16,7 +16,8 @@ import {
   BookOpen,
   MessageSquare,
   Bot,
-  Building2
+  Building2,
+  DollarSign
 } from "lucide-react";
 import {
   Sidebar,
@@ -53,6 +54,7 @@ import { HelpGuide } from "./components/dashboard/HelpGuide";
 import { FeedbackManagement } from "./components/dashboard/FeedbackManagement";
 import { AIVerification } from "./components/dashboard/AIVerification";
 import { OrganizationManagement } from "./components/dashboard/OrganizationManagement";
+import { MonetizationView } from "./components/dashboard/MonetizationView";
 import { Toaster } from "./components/ui/sonner";
 
 const menuItems = [
@@ -63,6 +65,7 @@ const menuItems = [
   { id: "teams", label: "Teams", icon: Shield },
   { id: "feedback", label: "Feedback", icon: MessageSquare },
   { id: "ai-verification", label: "AI Verification", icon: Bot },
+  { id: "monetization", label: "Monetization", icon: DollarSign },
   { id: "analytics", label: "Analytics", icon: BarChart3 },
   { id: "help", label: "Help & Guide", icon: BookOpen },
   { id: "settings", label: "Settings", icon: SettingsIcon },
@@ -93,6 +96,8 @@ export default function App() {
         return <FeedbackManagement />;
       case "ai-verification":
         return <AIVerification />;
+      case "monetization":
+        return <MonetizationView />;
       case "analytics":
         return <Analytics />;
       case "help":

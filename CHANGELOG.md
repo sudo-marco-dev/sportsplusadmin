@@ -1,6 +1,19 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+ 
+## [v1.1.0] - 2026-05-02
+
+### Added
+- **Monetization (Module 4):** Created high-fidelity `MonetizationView` dashboard using shadcn/ui patterns to track platform revenue.
+- **Monetization (Module 4):** Integrated `recharts` to visualize Monthly Recurring Revenue (MRR) and Promoted Tournament one-off fees over time.
+- **Monetization (Module 4):** Built a recent transactions data table and high-level KPI metric cards.
+- **Navigation:** Updated sidebar routing to include a dedicated "Monetization" tab with the `DollarSign` icon.
+
+### Changed
+- **Localization:** Swept the codebase and mock data to update all currency formatting from USD (`$`) to Philippine Peso (`₱`) with realistic local pricing adjustments.
+- **Mock Data:** Updated `adminMockData.ts` to reflect realistic PHP-based transaction values and revenue scales.
+
 
 ## [v1.0.0] - 2026-04-30
 
